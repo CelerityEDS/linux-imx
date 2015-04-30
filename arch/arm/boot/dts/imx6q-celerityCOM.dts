@@ -20,3 +20,16 @@
 &sata {
 	status = "okay";
 };
+
+&ldb {
+	ipu_id = <0>;
+	sec_ipu_id = <0>;
+};
+
+&mxcfb1 {
+	status = "okay";
+};
+
+&mxcfb2 {
+	status = "okay";
+};
