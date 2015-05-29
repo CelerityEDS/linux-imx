@@ -56,3 +56,10 @@
 	pinctrl-0 = <&pinctrl_usdhc3_1>;
 	status = "okay";
 };
+
+&fec {
+	pinctrl-names = "default";
+	pinctrl-0 = <&pinctrl_enet_1>;
+	phy-mode = "rgmii";
+	status = "okay";
+};
