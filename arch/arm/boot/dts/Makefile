@@ -122,7 +122,7 @@ dtb-$(CONFIG_ARCH_MXC) += \
 	imx6dl-sabresd-ldo.dtb \
 	imx6dl-wandboard.dtb \
 	imx6q-arm2.dtb \
-	imx6q-celerityCOM.dtb \
+	imx6q-imx6com.dtb \
 	imx6q-sabreauto.dtb \
 	imx6q-sabreauto-ecspi.dtb \
 	imx6q-sabreauto-flexcan1.dtb \

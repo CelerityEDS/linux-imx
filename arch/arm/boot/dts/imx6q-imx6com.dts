@@ -10,10 +10,10 @@
  */
 /dts-v1/;
 #include "imx6q.dtsi"
-#include "imx6qdl-celerityCOM.dtsi"
+#include "imx6qdl-imx6com.dtsi"
 
 / {
-	model = "Celerity i.MX6Q COM Board";
+	model = "CelerityEDS iMX6COM Board";
 	compatible = "fsl,imx6q";
 };
 
@@ -34,32 +34,3 @@
 	status = "okay";
 };
 
-&usbh1 {
-	status = "okay";
-};
-
-
-&usdhc1 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_usdhc1_1>;
-	status = "okay";
-};
-
-&usdhc2 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_usdhc2_2>;
-	status = "okay";
-};
-
-&usdhc3 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_usdhc3_1>;
-	status = "okay";
-};
-
-&fec {
-	pinctrl-names = "default";
-	pinctrl-0 = <&pinctrl_enet_1>;
-	phy-mode = "rgmii";
-	status = "okay";
-};
