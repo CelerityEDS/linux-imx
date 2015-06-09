@@ -11,10 +11,23 @@
 /dts-v1/;
 #include "imx6q.dtsi"
 #include "imx6qdl-imx6com.dtsi"
+#include <dt-bindings/gpio/gpio.h>
 
 / {
 	model = "CelerityEDS iMX6COM Board";
 	compatible = "fsl,imx6q";
+
+	leds {
+		compatible = "gpio-leds";
+		debug-led {
+			label = "DebugLED";		/* Debug LED D9 on iMX6COM */
+			gpios = <&gpio7 8 0>;
+		};
+		user-led {
+			label = "UserLED";		/* User LED D2 on COM Carrier Board */
+			gpios = <&gpio5 19 0>;
+		};
+	};
 };
 
 &sata {
@@ -33,4 +46,3 @@
 &mxcfb2 {
 	status = "okay";
 };
-
